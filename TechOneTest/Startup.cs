@@ -22,9 +22,9 @@ namespace TechOneTest
                     policy =>
                     {
                         policy.WithOrigins("http://localhost:3000")
-                        .AllowAnyHeader()
-                        .AllowAnyMethod();
-
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
                     });
             });
 
@@ -43,9 +43,8 @@ namespace TechOneTest
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
-            app.UseHttpsRedirection();
             app.UseCors();
+            app.UseHttpsRedirection();
             app.MapControllers();
         }
     }
