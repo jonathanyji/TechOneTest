@@ -10,6 +10,7 @@
 2. Start the application by clicking on the play button
 
 By default, it will start the server at http://localhost:5002
+Sawgger is also implemented and automatically launched at startup 
 
 ## Frontend Setup
 1. Navigate to ClientApp Directory and open a new terminal/command prompt
